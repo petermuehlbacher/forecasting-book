@@ -1,0 +1,156 @@
+\documentclass[11pt,reqno]{article}
+\RequirePackage[OT1]{fontenc}
+\RequirePackage{amsthm,amsmath}
+\RequirePackage[numbers]{natbib}
+\RequirePackage[colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{amssymb}
+\usepackage{anysize}
+\usepackage{hyperref}
+\usepackage{extarrows}
+\usepackage{multirow}
+\usepackage{natbib}
+\usepackage{stmaryrd}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{showlabels}
+\usepackage{todonotes}
+%\usepackage[disable]{todonotes}
+\usepackage[perpage]{footmisc}
+
+
+
+\numberwithin{equation}{section}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defi}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{assu}[thm]{Assumption}
+\newtheorem{Exa}{Example}[section]
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+\renewcommand*{\bibfont}{\footnotesize}
+
+\newcommand{\eqby}[1]{\mathrel{\stackrel{#1}{=}}}
+\newcommand{\eqbydef}{\mathrel{\stackrel{\hspace*{-3mm}\text{\tiny(def)}\hspace*{-3mm}}{=}}}
+\newcommand{\leqby}[1]{\mathrel{\stackrel{#1}{\leq}}}
+\newcommand{\geqby}[1]{\mathrel{\stackrel{#1}{\geq}}}
+\newcommand{\deq}{\mathrel{\mathop:}=}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}} % use as in http://tex.stackexchange.com/questions/42726/align-but-show-one-equation-number-at-the-end
+%\begin{align*}
+%a &=b \\
+%  &=c \numberthis \label{eqn}
+%\end{align*}
+
+\newcommand{\iid}[1]{\mathrel{\stackrel{\text{iid}}{\sim}}#1}
+\newcommand{\iidnormal}{\mathrel{\stackrel{\text{iid}}{\sim}}\mathcal N(0,1)}
+
+
+\newcommand{\const}{\mbox{const}}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\e}{\varepsilon}
+\newcommand{\pt}{\partial}
+\newcommand{\rd}{{\rm d}}
+
+
+\newcommand{\bke}[1]{\left( #1 \right)}
+\newcommand{\bkt}[1]{\left[ #1 \right]}
+\newcommand{\bket}[1]{\left\{ #1 \right\}}
+\newcommand{\norm}[1]{\| #1 \|}
+\newcommand{\Norm}[1]{\left\Vert #1 \right\Vert}
+\newcommand{\bka}[1]{\left\langle #1 \right\rangle}
+\newcommand{\vect}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+
+
+\newcommand{\tr}{\mbox{tr\,}}
+
+
+\renewcommand{\Re}{\mathsf{Re}\,}
+\renewcommand{\Im}{\mathsf{Im}\,}
+\newcommand{\supp}{\mathsf{supp}\,}
+
+\newcommand{\E}{{\mathbb E }}
+\newcommand{\R}{{\mathbb R }}
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\Z}{{\mathbb Z}}
+\renewcommand{\P}{{\mathbb P}}
+\newcommand{\C}{{\mathbb C}}
+
+\renewcommand{\div}{\mathop{\mathrm{div}}}
+\newcommand{\curl}{\mathop{\mathrm{curl}}}
+\newcommand{\wkto}{\rightharpoonup}
+
+
+\newcommand{\Cr}{\color{red}}
+\newcommand{\Cb}{\color{blue}}
+\newcommand{\Cg}{\color{green}}
+\newcommand{\nc}{\normalcolor}
+
+
+\marginsize{35mm}{35mm}{38mm}{40mm}
+
+
+
+\begin{document}
+\title{Probabilistic Forecasting}
+\date{\today}
+%\author{Peter M\"{u}hlbacher}
+
+\maketitle
+
+
+%\begin{abstract}
+%Abstract goes here. Lorem ipsum, blabla.
+%\end{abstract}
+\tableofcontents
+
+
+\section{Introduction}
+
+
+\section{Common Objections}
+
+\subsection{``Saying `53\%' instead of `maybe' only creates a false sense of certainty"}
+\subsection{``You can't put probabilities on one-off events"}
+\subsection{``This trajectory of forecasts looks wrong to me, these forecasts can't be any good"}
+
+\section{Scoring Methods}
+
+\section{Aggregation of Forecasts}
+Note on prediction markets, subject matter experts vs good forecasters, \dots
+
+\subsection{Theoretical Results}
+
+\subsection{Empirical Observations}
+
+
+\section{Model Building}
+\subsection{Useful Priors}
+
+\subsection{Model Uncertainty}
+
+\subsection{Maximum Entropy Principle}
+
+\subsection{Distributions From Universality/Fixed-Point Considerations}
+
+\appendix
+\section{Relevant Bits of Probability Theory}
+\subsection{Basics}
+Probability measures, (conditional) expectations (both on events and on $\sigma$-algebra, (conditional) probability, \dots
+\subsection{Martingales}
+\subsection{Maximum Entropy Principle}
+\section{Causality}
+Why is causality important? $\rightarrow$ model extrapolation
+
+
+
+
+\bibliography{references}{}
+\bibliographystyle{alpha}
+
+
+\end{document}
